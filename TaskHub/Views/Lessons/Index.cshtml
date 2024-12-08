@@ -1,0 +1,25 @@
+﻿@model IEnumerable<TaskHub.ViewModels.LessonViewModel>
+
+@{
+    ViewData["Title"] = "Lessons Index";
+}
+
+<h1>Lessons</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var lesson in Model)
+        {
+            <tr>
+                <th scope="row">@lesson.Id</th>
+                <td>@lesson.Title</td>
+            </tr>
+        }
+    </tbody>
+</table>
