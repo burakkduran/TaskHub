@@ -3,7 +3,7 @@ using TaskHub.Models;
 
 public class AppDbContext : DbContext
 {
-    public DbSet<Lessons> Lessons { get; set; }
+    public DbSet<Lesson> Lessons { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Assignments> Assignments { get; set; }
 
